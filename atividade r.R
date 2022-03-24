@@ -14,12 +14,14 @@ mtcars %>% filter(cyl >= 6)
 
 
 ## Grafico 1
+
+
 mtcars %>% filter(cyl >= 6) %>%
   ggplot(aes(cyl))+
   geom_area(stat = "bin", fill = 'red')
 
-## Grafico 2
 
+## Grafico 2
 
 mtcars %>%
   ggplot(aes(gear)) + 
