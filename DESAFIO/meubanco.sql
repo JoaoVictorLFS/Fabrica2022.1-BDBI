@@ -1,43 +1,40 @@
-CREATE DATABASE minhabase; 	
+SELECT * FROM minhabase.funcionarios3;
 
-VARCHAR(255)
-INT
-DATA;
 
 USE minhabase;
-CREATE TABLE funcionarios(
-	nome VARCHAR(100), salario INT, data_n DATE);
-    
-    CREATE TABLE funcionarios3(
-	carro VARCHAR(100), cor INT, litroporkm DATE);
 
-ALTER TABLE funcionarios3 ADD COLUMN gasolina VARCHAR(255);
-ALTER TABLE funcionarios ADD COLUMN profissao VARCHAR(255);
+SELECT * FROM carros;
 
-SELECT * FROM funcionarios WHERE nine = "DA"; 
+CREATE TABLE carros(
+	carro VARCHAR(255), cor VARCHAR(255), litroporkm VARCHAR(255));
+    
+INSERT INTO carros (carro, cor, litroporkm)
+	VALUES ("opala", "branco" , "19km" );
 
-INSERT INTO funcionarios (nome, salario, data_n, profissao)
-	VALUES ("da", "10000" , "1995-05-12", "DBA");
+INSERT INTO carros (carro, cor, litroporkm)
+	VALUES ("fiat Uno", "Preto" , "22km" );
     
-INSERT INTO funcionarios (nome, salario, data_n, profissao)
-	VALUES ("joão", "100000" , "2002-11-11", "DBA");
+INSERT INTO carros (carro, cor, litroporkm)
+	VALUES ("onix", "Prata" , "13km" );
     
-SELECT * FROM funcionarios3;
+INSERT INTO carros (carro, cor, litroporkm)
+	VALUES ("monza", "Preto" , "15" );
+    
+CREATE TABLE Futebol(
+	nome_jogador VARCHAR(255), posição VARCHAR(255), gols VARCHAR(255));
 
-INSERT INTO funcionarios3 (carro, cor, litroporkm, gasolina)
-	VALUES ("carro1", "azul" , "19km" , "7" );
+INSERT INTO futebol (nome_jogador, posição, gols)
+	VALUES ("gabigol", "Atacante" , "200 gols" );
     
-INSERT INTO funcionarios3 (carro, cor, litroporkm, gasolina)
-	VALUES ("carro2", "blue" , "19km" , "6" );
+INSERT INTO futebol (nome_jogador, posição, gols)
+	VALUES ("neymar", "Ponta Esquerda" , "401 gols" );
     
-INSERT INTO funcionarios3 (carro, cor, litroporkm, gasolina)
-	VALUES ("carro3", "verde" , "19km" , "5" );
-    
-DROP TABLE funcionarios2;
-
-    
-
-
+INSERT INTO futebol (nome_jogador, posição, gols)
+	VALUES ("Cristiano Ronaldo", "Centroavante" , "807 gols" );
     
 
     
+    
+    
+    
+    DROP TABLE funcionarios;
